@@ -1,0 +1,18 @@
+export const typescriptRules = {
+  '@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
+  '@typescript-eslint/consistent-type-imports': ['error', { fixStyle: 'inline-type-imports' }],
+  '@typescript-eslint/method-signature-style': 'error',
+  '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: false }],
+  '@typescript-eslint/no-unsafe-enum-comparison': 'off',
+  'no-unused-vars': 'off',
+  '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+  'no-use-before-define': 'off',
+  '@typescript-eslint/no-use-before-define': 'error',
+  '@typescript-eslint/prefer-includes': 'error',
+  '@typescript-eslint/prefer-reduce-type-parameter': 'error',
+  '@typescript-eslint/prefer-ts-expect-error': 'error',
+  'no-return-await': 'off',
+  '@typescript-eslint/return-await': 'error',
+  '@typescript-eslint/switch-exhaustiveness-check': 'error',
+  '@typescript-eslint/type-annotation-spacing': 'error',
+};
