@@ -1,12 +1,9 @@
 // Change the cjs imports to esm
-import { coreRules } from './rules/core.js';
-import { importRules } from './rules/import.js';
-import { typescriptRules } from './rules/typescript.js';
-import { importSettings } from './settings/import.js';
-import { reactSettings } from './settings/react.js';
+import { coreRules, importRules, typescriptRules } from '../rules';
+import { importSettings, reactSettings } from '../settings';
 
 /** @type {import('eslint').Linter.Config} */
-export const remixConfig = (tsconfigRootDir) => ({
+export const remixConfig = (tsconfigRootDir: string) => ({
   env: {
     browser: true,
     es2022: true,

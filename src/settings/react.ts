@@ -1,4 +1,4 @@
-export const { reactSettings } = {
+export const reactSettings = {
   react: {
     version: 'detect',
   },
