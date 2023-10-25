@@ -1,4 +1,4 @@
-export const importSettings = (tsconfigRootDir: string) => ({
+export const importSettings = (tsconfigRootDir = '.') => ({
   'import/parsers': {
     '@typescript-eslint/parser': ['.ts', '.tsx', '.d.ts'],
   },

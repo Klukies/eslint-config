@@ -3,7 +3,7 @@ import { coreRules, importRules, typescriptRules } from '../rules';
 import { importSettings, reactSettings } from '../settings';
 
 /** @type {import('eslint').Linter.Config} */
-export const remixConfig = (tsconfigRootDir: string) => ({
+export const remixConfig = (tsconfigRootDir = '.') => ({
   env: {
     browser: true,
     es2022: true,
@@ -12,7 +12,7 @@ export const remixConfig = (tsconfigRootDir: string) => ({
   extends: ['eslint:recommended', 'plugin:import/recommended', 'plugin:prettier/recommended'],
   ignorePatterns: ['/node_modules', '/build', '/public/build'],
   parserOptions: {
-    ecmaVersion: 'es2022',
+    ecmaVersion: 2022,
     sourceType: 'module',
   },
   plugins: ['import', 'prettier'],
@@ -37,7 +37,7 @@ export const remixConfig = (tsconfigRootDir: string) => ({
       ],
       parser: '@typescript-eslint/parser',
       parserOptions: {
-        ecmaVersion: 'es2022',
+        ecmaVersion: 2022,
         project: true,
         sourceType: 'module',
         tsconfigRootDir,
